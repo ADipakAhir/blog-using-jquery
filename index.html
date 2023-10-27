@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="portfolio">
+        <div class="heading">
+            <h1>portfolio</h1>
+            <p> Lorem ipsum dolor sit amet t nostrum magnam, eveniet molestiae s?</p>
+            <button id="all">All</button>
+            <button id="blog">BLOG</button>
+            <button id="post">POST</button>
+            <button id="web">WEB</button>
+        </div>
+        <div class="container">
+            <div class="parent">
+                <img class="img1" src="images/(1).jpeg" width="100%" alt="">
+                <img class="img2" src="images/(2).jpeg" width="100%" alt="">
+                <img class="img3" src="images/(3).jpeg" width="100%" alt="">
+                <img class="img4" src="images/(4).jpeg" width="100%" alt="">
+                <img class="img5" src="images/(5).jpeg" width="100%" alt="">
+                <img class="img6" src="images/(6).jpeg" width="100%" alt="">
+                <img class="img7" src="images/(7).jpeg" width="100%" alt="">
+                <img class="img8" src="images/(8).jpeg" width="100%" alt="">
+                <img class="img9" src="images/(9).jpeg" width="100%" alt="">
+                <img class="img10" src="images/(10).jpeg" width="100%" alt="">
+                <img class="img11" src="images/(11).jpeg" width="100%" alt="">
+                <img class="img12" src="images/(12).jpeg" width="100%" alt="">
+                <img class="img13" src="images/(13).jpeg" width="100%" alt="">
+                <img class="img14" src="images/(14).jpeg" width="100%" alt="">
+                <img class="img15" src="images/(15).jpeg" width="100%" alt="">
+                <img class="img16" src="images/(16).jpeg" width="100%" alt="">
+                <img class="img17" src="images/(17).jpeg" width="100%" alt="">
+                <img class="img18" src="images/(18).jpeg" width="100%" alt="">
+                <img class="img19" src="images/(19).jpeg" width="100%" alt="">
+                <img class="img20" src="images/(20).jpeg" width="100%" alt="">
+                <img class="img21" src="images/(21).jpeg" width="100%" alt="">
+                <img class="img22" src="images/(22).jpeg" width="100%" alt="">
+            </div>
+        </div>
+    </section>
+
+
+ 
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#all').click(function() {
+                $('.parent *').removeClass('active');
+            });
+
+            $('#blog').click(function() {
+                $('.parent *').addClass('active');
+                $('.img1 , .img2 , .img3 , .img4 , .img5 , .img6 ,.img7').removeClass('active');
+            });
+
+            $('#post').click(function() {
+                $('.parent *').addClass('active');
+                $(' .img8 , .img9 , .img10 , .img11 , .img12 , .img13 , .img14 ').removeClass('active');
+            });
+
+            $('#web').click(function() {
+                $('.parent *').addClass('active');
+                $('.img15 , .img16 , .img17 , .img18 , .img19 , .img20 , .img21').removeClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
